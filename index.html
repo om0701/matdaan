@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matdaan — Sovereign Electronic Voting Platform &bull; Republic of India</title>
+  
+  <!-- Premium 2026 Typography: Plus Jakarta Sans for UI + Playfair Display for selective poetic accents -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Lighting Elements -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-right" aria-hidden="true"></div>
+
+  <!-- Minimal Glass Header -->
+  <header class="header-glass" id="site-header">
+    <div class="header-content">
+      
+      <!-- Brand Minimal Identity -->
+      <a href="#home" class="brand" aria-label="Matdaan Homepage">
+        <span class="brand-chakra">
+          <svg viewBox="0 0 24 24" fill="none" class="chakra-svg" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="2 2"/>
+            <circle cx="12" cy="12" r="4" fill="#0A1128"/>
+            <circle cx="12" cy="12" r="2" fill="#F59E0B"/>
+          </svg>
+        </span>
+        <span class="brand-text">Matdaan<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Clean Fluid Nav -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#home" id="nav-home" class="nav-item">Overview</a>
+        <a href="#how-it-works" id="nav-how-it-works" class="nav-item">Process</a>
+        <a href="#security-trust" id="nav-security" class="nav-item">Architecture</a>
+      </nav>
+
+      <!-- Minimal Nav Actions -->
+      <div class="nav-actions">
+        <a href="#login" id="nav-login" class="nav-btn-text">Sign In</a>
+        <a href="#register" id="nav-register" class="nav-btn-pill">Enroll to Vote</a>
+        <a href="#admin" id="nav-admin" class="nav-btn-officer" title="Election Officer Portal">
+          <span class="officer-dot"></span>
+          <span>Officer Vault</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="mobile-toggle" id="btn-mobile-menu" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="drawer-inner">
+      <a href="#home" class="drawer-link">Overview</a>
+      <a href="#how-it-works" class="drawer-link">The Process</a>
+      <a href="#security-trust" class="drawer-link">Security Architecture</a>
+      <a href="#register" class="drawer-link">Enroll to Vote</a>
+      <a href="#login" class="drawer-link">Voter Sign In</a>
+      <a href="#admin" class="drawer-link drawer-link-officer">Officer Portal</a>
+    </div>
+  </div>
+
+  <!-- Primary Viewport Shell -->
+  <main class="page-shell" id="main-content">
+
+    <!-- ======================================================================
+         VIEW 1: HOME (MODERN 2026 EDITORIAL DESIGN)
+         ====================================================================== -->
+    <section id="view-home" class="view active-view" aria-label="Homepage">
+      
+      <!-- HERO: OPEN, FLUID, IMMERSIVE -->
+      <div class="hero-fluid">
+        <div class="hero-layout">
+          
+          <div class="hero-text-block">
+            <div class="hero-pill-badge">
+              <span class="badge-live-pulse"></span>
+              <span>General Election &bull; Sovereign Digital Ballot</span>
+            </div>
+
+            <h1 class="hero-display-title">
+              Every Vote <br>
+              <span class="title-italic-accent">Shapes Tomorrow.</span>
+            </h1>
+
+            <p class="hero-lead-text">
+              The next-generation electronic balloting system for the world’s largest democracy. Decoupled voter privacy, hardware-isolated verification, and tamper-evident custody ensure every voice counts with absolute certainty.
+            </p>
+
+            <div class="hero-action-cluster">
+              <a href="#register" class="btn-primary-large">
+                <span>Enroll as Elector</span>
+                <span class="btn-arrow-icon">&rarr;</span>
+              </a>
+              <a href="#how-it-works" class="btn-secondary-flat">
+                <span>How It Works &darr;</span>
+              </a>
+            </div>
+
+            <div class="hero-metrics-strip">
+              <div class="strip-item">
+                <span class="strip-check">&#10003;</span>
+                <span>Constitution Article 326</span>
+              </div>
+              <div class="strip-item">
+                <span class="strip-check">&#10003;</span>
+                <span>Decoupled Secret Ballot</span>
+              </div>
+              <div class="strip-item">
+                <span class="strip-check">&#10003;</span>
+                <span>Air-Gapped Officer Vault</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Luminous Abstract Ballot Sculpture -->
+          <div class="hero-sculpture-block" aria-hidden="true">
+            <div class="luminous-orb">
+              <div class="orb-inner"></div>
+              
+              <!-- Floating Ashoka Geometric Rings -->
+              <div class="geometry-halo halo-one"></div>
+              <div class="geometry-halo halo-two"></div>
+              
+              <!-- Floating Glass Monolith with Saffron Prism -->
+              <div class="glass-monolith">
+                <div class="monolith-face">
+                  <div class="monolith-slot"></div>
+                  <div class="monolith-seal-mark">
+                    <span class="seal-icon">&#9670;</span>
+                    <span class="seal-text">ECI ENCRYPTED</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Node Tag -->
+              <div class="glass-tag tag-top">
+                <span class="tag-dot"></span>
+                <span>Zero Public Leakage</span>
+              </div>
+              <div class="glass-tag tag-bottom">
+                <span class="tag-dot green"></span>
+                <span>Immutable Ledger</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- EDITORIAL PARTICIPATION TELEMETRY (FLUID, UNBOXED) -->
+      <section class="telemetry-fluid" id="election-stats" aria-label="Electoral Telemetry">
+        <div class="telemetry-container">
+          
+          <div class="telemetry-narrative-bar">
+            <div>
+              <span class="kicker-label">CIVIC TELEMETRY</span>
+              <h2 class="telemetry-headline">National Voter Turnout</h2>
+            </div>
+            <div class="telemetry-privacy-pill">
+              <span class="lock-glyph">&#128274;</span>
+              <span><strong>Constitutional Secrecy Enforced:</strong> Candidate tallies are sealed in custodial officer custody. Only participation volume is shown publicly.</span>
+            </div>
+          </div>
+
+          <!-- Fluid Statistics Rows (No Rigid Box Borders) -->
+          <div class="telemetry-metrics-row">
+            
+            <div class="telemetry-metric">
+              <div class="metric-index">01 / ELECTORATE</div>
+              <div class="metric-value-wrap">
+                <span class="metric-big-number" id="home-registered-count" data-counter="0">0</span>
+              </div>
+              <h3 class="metric-title">Registered Electors</h3>
+              <p class="metric-desc">Verified citizens enrolled on the digital electoral roll across all 28 States and 8 Union Territories.</p>
+            </div>
+
+            <div class="telemetry-divider" aria-hidden="true"></div>
+
+            <div class="telemetry-metric">
+              <div class="metric-index">02 / BALLOTS</div>
+              <div class="metric-value-wrap">
+                <span class="metric-big-number" id="home-votes-count" data-counter="0">0</span>
+              </div>
+              <h3 class="metric-title">Ballots Cast</h3>
+              <p class="metric-desc">Decoupled, anonymized secret votes safely committed to the cryptographic ballot vault.</p>
+            </div>
+
+            <div class="telemetry-divider" aria-hidden="true"></div>
+
+            <div class="telemetry-metric">
+              <div class="metric-index">03 / TURNOUT</div>
+              <div class="metric-value-wrap">
+                <span class="metric-big-number text-accent" id="home-turnout-pct">0.0%</span>
+              </div>
+              <h3 class="metric-title">Voter Participation</h3>
+              <p class="metric-desc">Real-time democratic participation rate computed live from total registered electors.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS (NATURAL EDITORIAL FLOW) -->
+      <section class="narrative-section" id="how-it-works" aria-label="The Process">
+        <div class="narrative-container">
+          
+          <div class="narrative-header">
+            <span class="kicker-label">THE 2026 VOTING PROCESS</span>
+            <h2 class="narrative-headline">Three Steps to Make Your Voice Count.</h2>
+            <p class="narrative-lead">Effortless and intuitive for every citizen, backed by military-grade cryptographic guarantees.</p>
+          </div>
+
+          <div class="process-stream">
+            
+            <!-- Step 1 -->
+            <div class="process-node">
+              <span class="process-num">01</span>
+              <div class="process-content">
+                <h3 class="process-heading">Digital Identity Enrollment</h3>
+                <p class="process-text">
+                  Provide your legal citizen credentials, constituency, and age. The system verifies Article 326 eligibility (&ge; 18 years) and immediately issues your encrypted, permanent <strong>Voter ID</strong>.
+                </p>
+                <a href="#register" class="process-action-link">Enroll Now &rarr;</a>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="process-node">
+              <span class="process-num">02</span>
+              <div class="process-content">
+                <h3 class="process-heading">Frictionless Authentication</h3>
+                <p class="process-text">
+                  Sign in with your unique Voter ID and your secret 4-digit PIN. The system verifies your active franchise and unlocks your personalized citizen dashboard.
+                </p>
+                <a href="#login" class="process-action-link">Voter Sign In &rarr;</a>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="process-node">
+              <span class="process-num">03</span>
+              <div class="process-content">
+                <h3 class="process-heading">Confidential Ballot Submission</h3>
+                <p class="process-text">
+                  Enter the voting booth to choose your preferred party or NOTA. Confirm your selection and receive an indelible digital purple ink receipt timestamped to the exact second.
+                </p>
+                <a href="#login" class="process-action-link">View Ballot Preview &rarr;</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECURITY & TRUST ARCHITECTURE (MINIMAL, ASYMMETRICAL) -->
+      <section class="architecture-section" id="security-trust" aria-label="Security Architecture">
+        <div class="narrative-container">
+          
+          <div class="architecture-layout">
+            
+            <div class="arch-intro">
+              <span class="kicker-label">SECURITY ARCHITECTURE</span>
+              <h2 class="narrative-headline">Architected for Zero Trust and Absolute Secrecy.</h2>
+              <p class="narrative-lead">
+                No single entity—not even the Election Commission—can associate a cast ballot with an individual citizen's identity. Privacy is baked into the mathematical foundation.
+              </p>
+              
+              <div class="arch-quote">
+                <p>&ldquo;In democracy, the power of every citizen's single vote is the cornerstone of our sovereign destiny.&rdquo;</p>
+                <span>&mdash; Constitutional Assembly Principles</span>
+              </div>
+            </div>
+
+            <div class="arch-pillars-stream">
+              
+              <div class="arch-pillar">
+                <div class="pillar-line"></div>
+                <div class="pillar-detail">
+                  <h3 class="pillar-title">Voter Privacy Decoupling</h3>
+                  <p class="pillar-desc">Your Voter ID confirms your eligibility to cast one ballot, but the moment you press submit, the selection is cryptographically severed from your identity before reaching the tally.</p>
+                </div>
+              </div>
+
+              <div class="arch-pillar">
+                <div class="pillar-line"></div>
+                <div class="pillar-detail">
+                  <h3 class="pillar-title">One Elector, One Vote</h3>
+                  <p class="pillar-desc">State transition locking is atomic and instantaneous. Once marked as voted, any duplicate authentication or casting attempt is mathematically impossible.</p>
+                </div>
+              </div>
+
+              <div class="arch-pillar">
+                <div class="pillar-line"></div>
+                <div class="pillar-detail">
+                  <h3 class="pillar-title">Zero Public Result Leakage</h3>
+                  <p class="pillar-desc">Unlike informal polling tools, live candidate vote tallies are sealed in custodial quarantine. Only authorized Returning Officers with hardware credentials can access the results vault.</p>
+                </div>
+              </div>
+
+              <div class="arch-pillar">
+                <div class="pillar-line"></div>
+                <div class="pillar-detail">
+                  <h3 class="pillar-title">Java Enterprise Backend</h3>
+                  <p class="pillar-desc">Engineered with thread-safe Java core architecture, synchronized domain models, and zero external dependencies for maximum enterprise reliability.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </section>
+
+    <!-- ======================================================================
+         VIEW 2: SIGN UP (RETHOUGHT DIGITAL IDENTITY ENROLLMENT)
+         ====================================================================== -->
+    <section id="view-register" class="view" aria-label="Elector Registration">
+      <div class="enrollment-stage">
+        
+        <!-- Center-Stage Enrollment Experience -->
+        <div id="register-form-container" class="enrollment-canvas">
+          
+          <!-- Stepper Indicator -->
+          <div class="enrollment-stepper">
+            <span class="step-pill active">01 Citizen Identity</span>
+            <span class="step-line"></span>
+            <span class="step-pill">02 Constituency</span>
+            <span class="step-line"></span>
+            <span class="step-pill">03 Security Key</span>
+          </div>
+
+          <div class="enrollment-header">
+            <span class="kicker-label">CITIZEN ENROLLMENT</span>
+            <h1 class="enrollment-title">Create Your Digital Voter Identity</h1>
+            <p class="enrollment-sub">Inscribe your name on the national electoral register. You must be an Indian citizen aged 18 years or older.</p>
+          </div>
+
+          <form id="registration-form" class="enrollment-form-clean" novalidate>
+            
+            <div class="form-clean-group">
+              <label for="reg-name" class="clean-label">Full Legal Name</label>
+              <input type="text" id="reg-name" class="clean-input" placeholder="Enter your full legal name" autocomplete="name" required>
+              <span class="clean-hint">As printed on your Aadhaar, Passport, or Government Photo ID.</span>
+            </div>
+
+            <div class="form-clean-row">
+              <div class="form-clean-group">
+                <label for="reg-age" class="clean-label">Age in Years</label>
+                <input type="number" id="reg-age" class="clean-input font-mono" placeholder="e.g. 21" min="1" max="120" required>
+                <span class="clean-hint">Article 326: Minimum 18 years required.</span>
+              </div>
+
+              <div class="form-clean-group">
+                <label for="reg-state" class="clean-label">Constituency / State</label>
+                <select id="reg-state" class="clean-select" required>
+                  <option value="">Select your State or UT</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                  <option value="Assam">Assam</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="Chhattisgarh">Chhattisgarh</option>
+                  <option value="Goa">Goa</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="Haryana">Haryana</option>
+                  <option value="Himachal Pradesh">Himachal Pradesh</option>
+                  <option value="Jharkhand">Jharkhand</option>
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Kerala">Kerala</option>
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Manipur">Manipur</option>
+                  <option value="Meghalaya">Meghalaya</option>
+                  <option value="Mizoram">Mizoram</option>
+                  <option value="Nagaland">Nagaland</option>
+                  <option value="Odisha">Odisha</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Sikkim">Sikkim</option>
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+                  <option value="Telangana">Telangana</option>
+                  <option value="Tripura">Tripura</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                  <option value="Uttarakhand">Uttarakhand</option>
+                  <option value="West Bengal">West Bengal</option>
+                  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                  <option value="Chandigarh">Chandigarh</option>
+                  <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                  <option value="Delhi (NCT)">Delhi (NCT)</option>
+                  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                  <option value="Ladakh">Ladakh</option>
+                  <option value="Lakshadweep">Lakshadweep</option>
+                  <option value="Puducherry">Puducherry</option>
+                </select>
+                <span class="clean-hint">Your permanent parliamentary jurisdiction.</span>
+              </div>
+            </div>
+
+            <div class="form-clean-group">
+              <label for="reg-pin" class="clean-label">Create a 4-Digit Security PIN</label>
+              <input type="password" id="reg-pin" class="clean-input font-mono pin-spacing" placeholder="&bull;&bull;&bull;&bull;" maxlength="4" inputmode="numeric" pattern="[0-9]{4}" required>
+              <span class="clean-hint">Your confidential access key to authenticate and unlock your ballot paper.</span>
+            </div>
+
+            <!-- Inline Error Notice -->
+            <div id="register-error" class="notice-clean notice-error hidden" role="alert"></div>
+
+            <div class="form-clean-actions">
+              <button type="submit" class="btn-enroll-primary">
+                <span>Complete Digital Enrollment</span>
+                <span class="btn-arrow-icon">&rarr;</span>
+              </button>
+            </div>
+
+            <div class="form-clean-footer">
+              Already enrolled on the electoral register? <a href="#login" class="clean-link">Sign In to Dashboard</a>
+            </div>
+
+          </form>
+
+        </div>
+
+        <!-- COMPLETION STATE: MODERN DIGITAL IDENTITY PASS -->
+        <div id="register-success-card" class="enrollment-canvas success-canvas hidden">
+          
+          <div class="pass-verified-header">
+            <span class="verified-glyph">&#10003;</span>
+            <span class="verified-tag">ENROLLMENT VERIFIED &bull; ELECTOR ISSUED</span>
+          </div>
+
+          <h2 class="pass-hero-title">Welcome to the Electorate.</h2>
+          <p class="pass-hero-sub">Your official digital identity pass has been committed to the sovereign electoral register.</p>
+
+          <!-- Modern Apple-Wallet Style Elector Pass -->
+          <div class="elector-digital-pass">
+            
+            <div class="pass-top">
+              <div class="pass-republic-row">
+                <span class="pass-seal-badge">&#9670; ECI</span>
+                <span class="pass-republic-text">REPUBLIC OF INDIA &bull; DIGITAL ELECTOR CARD</span>
+              </div>
+              <div class="pass-voter-id-box">
+                <span class="voter-id-label">OFFICIAL VOTER ID</span>
+                <span class="voter-id-val font-mono" id="success-voter-id">VTR000000</span>
+              </div>
+            </div>
+
+            <div class="pass-divider"></div>
+
+            <div class="pass-body">
+              <div class="pass-col">
+                <span class="pass-label">ELECTOR NAME</span>
+                <span class="pass-val" id="success-voter-name">—</span>
+              </div>
+              <div class="pass-col">
+                <span class="pass-label">AGE</span>
+                <span class="pass-val" id="success-voter-age">—</span>
+              </div>
+              <div class="pass-col full">
+                <span class="pass-label">PARLIAMENTARY CONSTITUENCY</span>
+                <span class="pass-val" id="success-voter-state">—</span>
+              </div>
+            </div>
+
+            <div class="pass-bottom">
+              <div class="pass-barcode-lines font-mono">
+                || | ||| | |||| ||| || | |||| | ||| || ||| |
+              </div>
+              <span class="pass-crypto-text">&#128737; SECURE ENCRYPTED PASS</span>
+            </div>
+
+          </div>
+
+          <div class="pass-instruction-box">
+            <strong>Important:</strong> Record your <strong>Voter ID</strong> and <strong>4-digit PIN</strong>. Both credentials are required to sign in and unlock your electronic ballot.
+          </div>
+
+          <div class="pass-actions-cluster">
+            <button type="button" id="btn-proceed-to-login" class="btn-primary-large">
+              <span>Sign In to Voter Dashboard</span>
+              <span class="btn-arrow-icon">&rarr;</span>
+            </button>
+            <button type="button" id="btn-register-another" class="btn-secondary-flat">
+              <span>Enroll Another Elector</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         VIEW 3: VOTER SIGN IN
+         ====================================================================== -->
+    <section id="view-login" class="view" aria-label="Elector Authentication">
+      <div class="auth-fluid-stage">
+        
+        <div class="auth-minimal-box">
+          
+          <div class="auth-header">
+            <span class="kicker-label">SECURE ENTRANCE</span>
+            <h1 class="auth-title">Voter Sign In</h1>
+            <p class="auth-sub">Enter your issued Voter ID and confidential 4-digit PIN to access your personal dashboard.</p>
+          </div>
+
+          <form id="voter-login-form" class="auth-form-clean" novalidate>
+            
+            <div class="form-clean-group">
+              <label for="login-voter-id" class="clean-label">Voter ID</label>
+              <input type="text" id="login-voter-id" class="clean-input font-mono text-uppercase" placeholder="e.g. VTR482910" maxlength="12" required>
+              <span class="clean-hint">Issued during digital enrollment (starts with &lsquo;VTR&rsquo;).</span>
+            </div>
+
+            <div class="form-clean-group">
+              <label for="login-pin" class="clean-label">4-Digit Security PIN</label>
+              <input type="password" id="login-pin" class="clean-input font-mono pin-spacing" placeholder="&bull;&bull;&bull;&bull;" maxlength="4" inputmode="numeric" required>
+              <span class="clean-hint">Your confidential access key.</span>
+            </div>
+
+            <!-- Inline Login Error -->
+            <div id="voter-login-error" class="notice-clean notice-error hidden" role="alert"></div>
+
+            <div class="form-clean-actions">
+              <button type="submit" class="btn-enroll-primary">
+                <span>Authenticate &amp; Open Dashboard</span>
+                <span class="btn-arrow-icon">&rarr;</span>
+              </button>
+            </div>
+
+            <div class="form-clean-footer">
+              Not registered on the electoral roll? <a href="#register" class="clean-link">Enroll as an elector</a>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         VIEW 4: VOTER DASHBOARD
+         ====================================================================== -->
+    <section id="view-dashboard" class="view" aria-label="Voter Dashboard">
+      <div class="narrative-container dashboard-viewport">
+        
+        <div class="dash-hero-row">
+          <div>
+            <span class="kicker-label">CITIZEN PORTAL</span>
+            <h1 class="narrative-headline">Elector Dashboard</h1>
+          </div>
+          <button type="button" id="btn-voter-logout" class="btn-secondary-flat small">Sign Out</button>
+        </div>
+
+        <!-- Elector Profile Slate -->
+        <div class="citizen-slate">
+          
+          <div class="slate-profile-header">
+            <div class="profile-monogram" id="profile-avatar-initials">AS</div>
+            <div class="profile-details">
+              <div class="profile-name-row">
+                <h2 class="profile-display-name" id="profile-name">—</h2>
+                <span class="profile-badge-pill" id="profile-status-badge">Eligible to Vote</span>
+              </div>
+              <span class="profile-voter-id">Official Voter ID: <strong id="profile-voter-id" class="font-mono">—</strong></span>
+            </div>
+          </div>
+
+          <div class="slate-details-grid">
+            <div class="detail-cell">
+              <span class="cell-label">CONSTITUENCY</span>
+              <span class="cell-val" id="profile-state">—</span>
+            </div>
+            <div class="detail-cell">
+              <span class="cell-label">AGE QUALIFICATION</span>
+              <span class="cell-val" id="profile-age">—</span>
+            </div>
+            <div class="detail-cell">
+              <span class="cell-label">BALLOT STATUS</span>
+              <span class="cell-val" id="profile-vote-status">—</span>
+            </div>
+          </div>
+
+          <!-- Unvoted State Action Gateway -->
+          <div id="dash-unvoted-actions" class="slate-ballot-gateway">
+            <div class="gateway-text">
+              <span class="gateway-tag">BALLOT ACTIVE</span>
+              <h3 class="gateway-title">Your Electronic Ballot Paper is Ready</h3>
+              <p class="gateway-desc">Proceed to the secret voting booth to cast your vote. Once cast, your choice cannot be altered.</p>
+            </div>
+            <a href="#vote" class="btn-primary-large">
+              <span>Enter Voting Booth</span>
+              <span class="btn-arrow-icon">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Already Voted State Certificate -->
+          <div id="dash-voted-notice" class="slate-voted-certificate hidden">
+            <div class="voted-cert-inner">
+              <span class="cert-check-glyph">&#10003;</span>
+              <div class="cert-copy">
+                <span class="cert-status-tag">VOTE COMMITTED &bull; SOVEREIGN FRANCHISE EXERCISED</span>
+                <h3 class="cert-heading">Your Ballot Has Been Formally Recorded</h3>
+                <p class="cert-subtext">Thank you for participating in the democratic process. Your vote remains completely confidential under Section 49A.</p>
+                <div class="cert-time font-mono" id="dash-voted-timestamp">—</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         VIEW 5: ELECTRONIC VOTING BOOTH (BALLOT)
+         ====================================================================== -->
+    <section id="view-vote" class="view" aria-label="Voting Booth">
+      <div class="narrative-container booth-viewport">
+        
+        <!-- Minimal Verification Strip -->
+        <div class="booth-status-strip">
+          <div class="booth-citizen-badge">
+            <span class="active-green-dot"></span>
+            <span>Elector: <strong id="booth-voter-name">—</strong> &bull; ID: <strong id="booth-voter-id" class="font-mono">—</strong> &bull; State: <span id="booth-voter-state">—</span></span>
+          </div>
+          <a href="#dashboard" class="clean-link">&larr; Back to Dashboard</a>
+        </div>
+
+        <!-- Contemporary Ballot Paper -->
+        <div id="ballot-card-container" class="contemporary-ballot">
+          
+          <div class="ballot-intro-header">
+            <div>
+              <span class="kicker-label">OFFICIAL PARLIAMENTARY BALLOT</span>
+              <h1 class="ballot-title">Lok Sabha General Election</h1>
+              <p class="ballot-sub">Select one registered candidate or NOTA. Then tap &ldquo;Cast Vote&rdquo;.</p>
+            </div>
+          </div>
+
+          <form id="ballot-form" novalidate>
+            <fieldset class="clean-fieldset">
+              <legend class="sr-only">Recognized Political Parties and NOTA</legend>
+              
+              <!-- 7 Candidate Cards with Party SVG Symbols -->
+              <div class="candidates-fluid-list" id="candidate-options-list">
+                <!-- Dynamically populated via app.js -->
+              </div>
+            </fieldset>
+
+            <!-- Inline Error -->
+            <div id="ballot-error" class="notice-clean notice-error hidden" role="alert"></div>
+
+            <div class="ballot-submit-bar">
+              <button type="submit" class="btn-cast-ballot">
+                <span>Cast Vote</span>
+                <span class="btn-arrow-icon">&rarr;</span>
+              </button>
+            </div>
+          </form>
+
+        </div>
+
+        <!-- TWO-STEP CONFIRMATION MODAL -->
+        <div id="vote-confirm-container" class="confirmation-dialog-card hidden">
+          <span class="kicker-label">FINAL CONFIRMATION</span>
+          <h2 class="dialog-title">Confirm Your Selection</h2>
+          <p class="dialog-sub">Please review your candidate choice carefully before permanent electronic transmission.</p>
+
+          <div class="dialog-selection-box">
+            <div class="selection-symbol-frame" id="confirm-party-symbol"></div>
+            <div class="selection-meta">
+              <span class="selection-label">SELECTED OPTION</span>
+              <div class="selection-code" id="confirm-party-code">BJP</div>
+              <div class="selection-name" id="confirm-party-name">Bharatiya Janata Party</div>
+            </div>
+          </div>
+
+          <div class="dialog-legal-note">
+            <strong>Legal Warning:</strong> Under Section 49A of the Conduct of Elections Rules, your ballot is irreversibly encrypted upon confirmation. You cannot modify or re-cast this vote.
+          </div>
+
+          <div class="dialog-actions-row">
+            <button type="button" id="btn-final-cast-vote" class="btn-cast-ballot">
+              <span>Confirm &amp; Commit Ballot</span>
+              <span class="btn-arrow-icon">&rarr;</span>
+            </button>
+            <button type="button" id="btn-back-to-ballot" class="btn-secondary-flat">
+              <span>Change Selection</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- POST-VOTE DIGITAL INK CONFIRMATION SCREEN -->
+        <div id="vote-success-container" class="ink-confirmation-slate hidden">
+          
+          <div class="ink-graphic-side">
+            <!-- Indelible Voting Ink SVG -->
+            <svg class="ink-vector" width="130" height="160" viewBox="0 0 120 150" fill="none" aria-label="Marked index finger with indelible violet ink">
+              <path d="M40 145 V52 C40 34 49 22 60 22 C71 22 80 34 80 52 V145" fill="#E8DDD1" stroke="#BAAEA2" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M48 50 C48 37 52 29 60 29 C68 29 72 37 72 50 C72 56 68 58 60 58 C52 58 48 56 48 50 Z" fill="#F7F1EB" stroke="#C7BCB0" stroke-width="1.5"/>
+              <rect x="57" y="25" width="6" height="42" rx="3" fill="#3B1C54"/>
+              <ellipse cx="60" cy="58" rx="6" ry="3" fill="#3B1C54"/>
+              <path d="M47 62 C53 65 67 65 73 62" stroke="#BAAEA2" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <div class="ink-copy-side">
+            <span class="verified-tag">BALLOT FORMALLY ENCRYPTED</span>
+            <h2 class="ink-headline">Your Vote Has Been Counted.</h2>
+            <p class="ink-body">
+              Your secret choice is sealed in the sovereign electronic vault. Your digital left index finger has been marked with the traditional indelible violet voting ink.
+            </p>
+
+            <div class="ink-receipt-strip">
+              <div class="receipt-item">
+                <span class="receipt-k">ELECTOR ID</span>
+                <span class="receipt-v font-mono" id="receipt-voter-id">—</span>
+              </div>
+              <div class="receipt-item">
+                <span class="receipt-k">TIMESTAMP</span>
+                <span class="receipt-v" id="receipt-timestamp">—</span>
+              </div>
+              <div class="receipt-item">
+                <span class="receipt-k">STATUS</span>
+                <span class="receipt-v text-accent">Marked as Voted</span>
+              </div>
+            </div>
+
+            <div class="ink-actions-group">
+              <a href="#dashboard" class="btn-primary-large">Return to Dashboard</a>
+              <a href="#home" class="btn-secondary-flat">Portal Overview</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         VIEW 6: ADMIN PORTAL & OFFICER DASHBOARD (DARK MIDNIGHT FINTECH)
+         ====================================================================== -->
+    <section id="view-admin" class="view admin-dark-stage" aria-label="Election Officer Portal">
+      <div class="narrative-container admin-stage-inner">
+        
+        <div class="admin-header-strip">
+          <div>
+            <span class="admin-vault-pill">&#9670; RESTRICTED OFFICER VAULT</span>
+            <h1 class="admin-title">Custody &amp; Results Telemetry</h1>
+          </div>
+          <div id="admin-status-pill" class="officer-live-status hidden">
+            <span class="pulse-dot-green"></span>
+            <span>Returning Officer Authenticated</span>
+          </div>
+        </div>
+
+        <!-- OFFICER SIGN IN (Shown when not authenticated) -->
+        <div id="admin-login-container" class="admin-signin-card">
+          <div class="admin-signin-header">
+            <div class="admin-shield-emblem">&#128274;</div>
+            <h2 class="admin-signin-title">Election Officer Sign In</h2>
+            <p class="admin-signin-sub">Authenticate using your administrative custody credentials.</p>
+          </div>
+
+          <form id="admin-login-form" novalidate>
+            <div class="form-clean-group admin-field">
+              <label for="admin-username" class="clean-label-dark">Officer Username</label>
+              <input type="text" id="admin-username" class="clean-input-dark" placeholder="e.g. admin" required>
+              <span class="clean-hint-dark">Classroom Demo Account: <strong>admin</strong></span>
+            </div>
+
+            <div class="form-clean-group admin-field">
+              <label for="admin-password" class="clean-label-dark">Security Passcode</label>
+              <input type="password" id="admin-password" class="clean-input-dark font-mono" placeholder="e.g. admin123" required>
+              <span class="clean-hint-dark">Classroom Demo Passcode: <strong>admin123</strong></span>
+            </div>
+
+            <!-- Inline Admin Error -->
+            <div id="admin-login-error" class="notice-clean notice-error hidden" role="alert"></div>
+
+            <div class="form-clean-actions">
+              <button type="submit" class="btn-admin-submit">
+                <span>Unlock Officer Vault</span>
+                <span class="btn-arrow-icon">&rarr;</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- OFFICER DASHBOARD (Shown when logged in) -->
+        <div id="admin-dashboard-container" class="admin-vault-dashboard hidden">
+          
+          <div class="vault-session-bar">
+            <div class="vault-officer-info">
+              <span class="vault-gold-badge">CHIEF RETURNING OFFICER</span>
+              <span class="vault-station-text">National Electronic Central Station #01 &bull; Active Session</span>
+            </div>
+            <button type="button" id="btn-admin-logout" class="btn-vault-logout">Sign Out Officer</button>
+          </div>
+
+          <!-- Executive Telemetry Numbers -->
+          <div class="vault-numbers-strip">
+            <div class="vault-number-cell">
+              <span class="v-label">REGISTERED ELECTORS</span>
+              <div class="v-number font-mono" id="admin-registered-count">0</div>
+              <span class="v-sub">Total citizens on roll</span>
+            </div>
+
+            <div class="vault-number-cell">
+              <span class="v-label">BALLOTS CAST</span>
+              <div class="v-number font-mono" id="admin-votes-count">0</div>
+              <span class="v-sub">Committed to electronic vault</span>
+            </div>
+
+            <div class="vault-number-cell accent">
+              <span class="v-label">VOTER TURNOUT</span>
+              <div class="v-number font-mono" id="admin-turnout-pct">0.0%</div>
+              <span class="v-sub">Current participation rate</span>
+            </div>
+          </div>
+
+          <!-- Candidate Vote Share Telemetry -->
+          <div class="vault-tally-slate">
+            <div class="vault-slate-header">
+              <h2 class="slate-heading">Candidate Vote Share Breakdown</h2>
+              <span class="slate-sub">Alphabetical order &bull; NOTA last</span>
+            </div>
+
+            <div id="admin-results-bars-container" class="vault-bars-stream">
+              <!-- Dynamically populated via app.js -->
+            </div>
+
+            <!-- Demo Utility: Load Sample Votes -->
+            <div class="vault-sample-utility">
+              <div class="utility-copy">
+                <h4>Classroom Presentation Utility</h4>
+                <p>Inject 14 verified sample votes (split evenly: 2 per option) to demonstrate filled percentage bars and electoral roll auditing.</p>
+              </div>
+              <button type="button" id="btn-load-sample-votes" class="btn-utility-gold">Load 14 Sample Votes</button>
+            </div>
+            <div id="admin-sample-message" class="notice-clean notice-success hidden" role="status"></div>
+          </div>
+
+          <!-- Electoral Roll Audit Ledger -->
+          <div class="vault-ledger-slate">
+            <div class="vault-slate-header">
+              <h2 class="slate-heading">Electoral Register Audit Ledger</h2>
+              <span class="slate-sub">Secret ballot preserved: candidate selection is hidden</span>
+            </div>
+
+            <div class="table-fluid-wrap">
+              <table class="vault-table">
+                <thead>
+                  <tr>
+                    <th>Voter ID</th>
+                    <th>Elector Name</th>
+                    <th>Age</th>
+                    <th>Constituency</th>
+                    <th>Enrollment Time</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="admin-voters-tbody">
+                  <!-- Dynamically populated via app.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Clean Minimalist Footer -->
+  <footer class="site-footer-fluid">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col-main">
+          <span class="footer-brand-title">Matdaan.</span>
+          <p class="footer-mission-text">
+            Sovereign electronic balloting system for the Republic of India. Engineered with standard Java Enterprise Architecture and modern web standards.
+          </p>
+        </div>
+
+        <div class="footer-col-nav">
+          <span class="footer-heading">NAVIGATION</span>
+          <a href="#home" class="footer-link">Overview</a>
+          <a href="#how-it-works" class="footer-link">Process</a>
+          <a href="#security-trust" class="footer-link">Architecture</a>
+          <a href="#register" class="footer-link">Enroll as Elector</a>
+          <a href="#login" class="footer-link">Voter Sign In</a>
+          <a href="#admin" class="footer-link">Officer Portal</a>
+        </div>
+
+        <div class="footer-col-legal">
+          <span class="footer-heading">GOVERNANCE</span>
+          <p class="footer-legal-copy">
+            Representation of the People Act, 1950 &bull; Conduct of Elections Rules, 1961 (Section 49A) &bull; Article 326 of the Constitution of India.
+          </p>
+          <button type="button" id="btn-reset-demo" class="btn-reset-plain">Reset Demonstration Data</button>
+        </div>
+      </div>
+
+      <div class="footer-sub-bar">
+        <span>Educational simulation &bull; Java Project &bull; Not officially connected to the Election Commission of India.</span>
+        <span>&copy; 2026 Matdaan Project &bull; All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
